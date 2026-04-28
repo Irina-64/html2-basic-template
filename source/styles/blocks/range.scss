@@ -1,16 +1,56 @@
 .range {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .range__scale {
+  position: relative;
+  grid-column: 1 / -1;
   min-height: 24px;
+}
+
+.range__scale::before {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  height: 2px;
+  background-color: $color-base-grey;
+  content: "";
+}
+
+.range__scale::after {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 240px;
+  height: 4px;
+  background-color: $color-primary-lighter;
+  content: "";
+}
+
+.range__field {
+  position: relative;
+}
+
+.range__field:first-of-type::after {
+  position: absolute;
+  top: 19px;
+  right: -13px;
+  width: 8px;
+  height: 2px;
+  background-color: $color-base-grey;
+  content: "";
 }
 
 .range__input {
   width: 100%;
   min-height: 40px;
-  font: inherit;
+  padding: 6px 10px;
+  font-family: $font-primary;
+  font-size: 16px;
+  line-height: 24px;
   text-align: center;
   border: 2px solid $color-base-primary;
   border-radius: 4px;

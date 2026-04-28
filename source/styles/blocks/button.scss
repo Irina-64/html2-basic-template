@@ -2,8 +2,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 40px;
   padding: 8px 20px;
-  font: inherit;
+  font-family: $font-primary;
+  font-size: 14px;
+  line-height: 20px;
   color: $color-base-white;
   background-color: $color-base-primary;
   border: 0;

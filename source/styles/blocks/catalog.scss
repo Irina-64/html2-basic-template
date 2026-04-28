@@ -11,12 +11,17 @@
 
 .catalog__filter {
   margin-top: 20px;
+  margin-bottom: 36px;
+}
+
+.catalog__sort {
+  margin-bottom: 20px;
 }
 
 .catalog__list {
   display: grid;
   gap: 20px;
-  margin: 20px 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }

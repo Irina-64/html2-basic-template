@@ -1,12 +1,22 @@
 .sort {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 8px;
 }
 
+.sort__label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .sort__select {
-  font: inherit;
+  max-width: 165px;
+  font-family: $font-primary;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
   color: $color-base-primary;
   background-color: transparent;
   border: 0;

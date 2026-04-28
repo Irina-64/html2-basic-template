@@ -12,9 +12,23 @@
 .filter__title {
   margin-bottom: 20px;
   font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.filter__control {
+  margin-bottom: 20px;
+}
+
+.filter__control:last-child {
+  margin-bottom: 0;
 }
 
 .filter__buttons {
   display: grid;
   gap: 20px;
+}
+
+.filter__button {
+  width: 100%;
 }
