@@ -23,3 +23,9 @@
     min-height: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    height: 540px;
+  }
+}

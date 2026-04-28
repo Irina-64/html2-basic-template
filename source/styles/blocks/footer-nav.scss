@@ -46,3 +46,9 @@
     border-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
