@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin: 40px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  color: $color-base-primary;
+  background-color: $color-base-white;
+  border-radius: 4px;
+}
+
+.pagination__link--current {
+  color: $color-base-black;
+  background-color: transparent;
+}

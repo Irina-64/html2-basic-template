@@ -1,0 +1,22 @@
+.catalog {
+  padding: 50px 0 44px;
+  background-color: $color-bg-light;
+}
+
+.catalog__container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.catalog__filter {
+  margin-top: 20px;
+}
+
+.catalog__list {
+  display: grid;
+  gap: 20px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}

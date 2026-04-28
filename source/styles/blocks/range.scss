@@ -1,0 +1,17 @@
+.range {
+  display: grid;
+  gap: 20px;
+}
+
+.range__scale {
+  min-height: 24px;
+}
+
+.range__input {
+  width: 100%;
+  min-height: 40px;
+  font: inherit;
+  text-align: center;
+  border: 2px solid $color-base-primary;
+  border-radius: 4px;
+}

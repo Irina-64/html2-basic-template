@@ -1,0 +1,13 @@
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.sort__select {
+  font: inherit;
+  color: $color-base-primary;
+  background-color: transparent;
+  border: 0;
+}

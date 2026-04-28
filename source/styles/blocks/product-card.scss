@@ -1,0 +1,22 @@
+.product-card {
+  display: grid;
+  gap: 10px;
+  padding: 40px 20px 20px;
+  background-color: $color-base-white;
+  border-radius: 4px;
+}
+
+.product-card__image {
+  margin: 0 auto;
+}
+
+.product-card__title,
+.product-card__description {
+  margin: 0;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

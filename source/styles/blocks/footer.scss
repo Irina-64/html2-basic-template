@@ -1,0 +1,15 @@
+.footer {
+  background-color: $color-base-white;
+}
+
+.footer__container {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer__academy-link {
+  display: inline-flex;
+  margin-top: 20px;
+  color: $color-base-grey;
+}

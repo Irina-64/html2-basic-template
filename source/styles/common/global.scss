@@ -1,1 +1,51 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: $mobile-width;
+  height: 100%;
+}
+
+body {
+  min-width: $mobile-width;
+  min-height: 100%;
+  margin: 0;
+  font-family: $font-primary;
+  color: $color-base-black;
+  background-color: $color-base-white;
+}
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(100%);
+}

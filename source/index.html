@@ -2,16 +2,240 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
+    <header class="header">
+      <div class="header__container">
+        <a class="logo header__logo" href="#" aria-current="page">
+          <img class="logo__image" src="images/logo.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go.">
+          <span class="logo__text">Интернет-магазин кофейных напитков</span>
+        </a>
+
+        <nav class="main-nav main-nav--closed header__nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+            <span class="main-nav__toggle-line"></span>
+          </button>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#catalog">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#delivery">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#about">О нас</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="user-nav header__user-nav">
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--login" href="#">
+              <span class="user-nav__text">Войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <span class="user-nav__text">Корзина</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go</h1>
+
+      <section class="hero" aria-label="Новинки магазина">
+        <div class="hero__container">
+          <ul class="hero__list">
+            <li class="hero__item hero__item--current">
+              <div class="hero__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="images/slider/flat-white-desktop.png 1x, images/slider/flat-white-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="images/slider/flat-white-tablet.png 1x, images/slider/flat-white-tablet@2x.png 2x">
+                  <img class="hero__image" src="images/slider/flat-white-mobile.png" srcset="images/slider/flat-white-mobile@2x.png 2x" width="280" height="280" alt="Стаканчик кофе Flat White.">
+                </picture>
+              </div>
+              <div class="hero__content">
+                <p class="hero__label">Новинка!</p>
+                <h2 class="hero__title">Декаф Флэт Уайт</h2>
+                <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком.</p>
+                <div class="hero__purchase">
+                  <span class="hero__old-price">295₽</span>
+                  <span class="hero__price">225₽</span>
+                  <a class="button hero__button" href="#catalog">Заказать</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="hero__control hero__control--prev" type="button" disabled>
+            <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="hero__control hero__control--next" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+          </button>
+
+          <ol class="hero__pagination">
+            <li class="hero__pagination-item">
+              <button class="hero__pagination-button hero__pagination-button--current" type="button">
+                <span class="visually-hidden">Первый слайд</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="advantages" id="about">
+        <div class="advantages__container">
+          <p class="section-label advantages__label">Преимущества</p>
+          <h2 class="section-title advantages__title">Главные причины выбрать Drink2Go</h2>
+
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--speed">
+              <h3 class="advantages__item-title">Скорость</h3>
+              <p class="advantages__description">Готовый напиток всегда под рукой.</p>
+            </li>
+            <li class="advantages__item advantages__item--fit">
+              <h3 class="advantages__item-title">Удобство</h3>
+              <p class="advantages__description">Выбирайте объём молока и страну происхождения зерна.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="catalog__container">
+          <p class="section-label catalog__label">Каталог</p>
+          <h2 class="section-title catalog__title">Каталог кофейных напитков</h2>
+
+          <form class="filter catalog__filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="filter__group">
+              <legend class="filter__title">Цена</legend>
+              <div class="range filter__range">
+                <div class="range__scale" data-range></div>
+                <label class="range__field">
+                  <span class="visually-hidden">Минимальная цена</span>
+                  <input class="range__input" type="number" name="price-min" value="0">
+                </label>
+                <label class="range__field">
+                  <span class="visually-hidden">Максимальная цена</span>
+                  <input class="range__input" type="number" name="price-max" value="900">
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Наличие молока</legend>
+              <label class="control filter__control">
+                <input class="control__input" type="radio" name="milk" value="any" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Неважно</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="filter__group">
+              <legend class="filter__title">Страна произрастания</legend>
+              <label class="control control--checkbox filter__control">
+                <input class="control__input" type="checkbox" name="country" value="brazil" checked>
+                <span class="control__mark"></span>
+                <span class="control__label">Бразилия</span>
+              </label>
+            </fieldset>
+
+            <div class="filter__buttons">
+              <button class="button filter__button" type="submit">Применить</button>
+              <button class="button button--secondary filter__button" type="reset">Сбросить</button>
+            </div>
+          </form>
+
+          <div class="catalog__content">
+            <form class="sort catalog__sort" action="https://echo.htmlacademy.ru" method="get">
+              <label class="sort__label" for="sort">Сортировка:</label>
+              <select class="sort__select" id="sort" name="sort">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+              </select>
+            </form>
+
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="product-card">
+                  <a class="product-card__image-link" href="#">
+                    <picture>
+                      <source srcset="images/products/can-1.webp 1x, images/products/can-1@2x.webp 2x" type="image/webp">
+                      <img class="product-card__image" src="images/products/can-1.png" srcset="images/products/can-1@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка.">
+                    </picture>
+                  </a>
+                  <h3 class="product-card__title">
+                    <a class="product-card__title-link" href="#">Декаф Флэт Уайт</a>
+                  </h3>
+                  <p class="product-card__description">Кофе без кофеина с молоком.</p>
+                  <div class="product-card__footer">
+                    <span class="product-card__price">225₽</span>
+                    <button class="button product-card__button" type="button">В корзину</button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+
+            <ol class="pagination catalog__pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link--current" href="#">1</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="map" id="delivery" aria-label="Адрес магазина Drink2Go">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map/map-desktop.jpg 1x, images/map/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="images/map/map-tablet.jpg 1x, images/map/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="images/map/map-mobile.jpg" srcset="images/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Карта с адресом магазина: Санкт-Петербург, набережная реки Карповки, 5.">
+        </picture>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__image" src="images/logo.svg" width="82" height="36" alt="Логотип интернет-магазина Drink2Go.">
+        </a>
+
+        <ul class="social footer__social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">Мы во ВКонтакте</span>
+            </a>
+          </li>
+        </ul>
+
+        <nav class="footer-nav footer__nav" aria-label="Навигация в подвале">
+          <div class="footer-nav__column">
+            <h2 class="footer-nav__title">Интернет-магазин</h2>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#catalog">Каталог</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано в HTML Academy
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,16 @@
+.user-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-nav__link {
+  display: flex;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.user-nav__text {
+  display: none;
+}

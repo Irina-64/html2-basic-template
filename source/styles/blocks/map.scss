@@ -1,0 +1,9 @@
+.map {
+  background-color: $color-base-secondary;
+}
+
+.map__image {
+  width: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
