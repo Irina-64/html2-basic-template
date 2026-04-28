@@ -70,3 +70,10 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    min-height: 460px;
+    padding: 50px 30px 30px;
+  }
+}

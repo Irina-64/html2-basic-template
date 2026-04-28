@@ -54,3 +54,43 @@
     gap: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 100px 0 120px;
+  }
+
+  .catalog__container {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 0 30px;
+    width: $desktop-width;
+    padding: 0 40px;
+  }
+
+  .catalog__label,
+  .catalog__title {
+    grid-column: 1 / -1;
+  }
+
+  .catalog__title {
+    margin-bottom: 40px;
+  }
+
+  .catalog__filter {
+    margin: 0;
+  }
+
+  .catalog__sort {
+    margin-bottom: 30px;
+  }
+
+  .catalog__content {
+    min-width: 0;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}

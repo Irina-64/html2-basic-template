@@ -46,3 +46,17 @@
     gap: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .filter {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .filter__buttons {
+    grid-column: auto;
+    grid-template-columns: 149px 149px;
+    justify-content: start;
+    gap: 18px;
+  }
+}
