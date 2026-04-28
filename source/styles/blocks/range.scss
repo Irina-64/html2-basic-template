@@ -30,6 +30,37 @@
   content: "";
 }
 
+.range__scale-handle {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  background-color: $color-base-white;
+  border: 2px solid $color-primary-lighter;
+  border-radius: 50%;
+}
+
+.range__scale-handle::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: $color-primary-lighter;
+  border-radius: 50%;
+  content: "";
+}
+
+.range__scale-handle--min {
+  left: 0;
+}
+
+.range__scale-handle--max {
+  left: 240px;
+  transform: translateX(-100%);
+}
+
 .range__field {
   position: relative;
 }
@@ -60,10 +91,18 @@
   .range__scale::after {
     width: 190px;
   }
+
+  .range__scale-handle--max {
+    left: 190px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .range__scale::after {
     width: 274px;
+  }
+
+  .range__scale-handle--max {
+    left: 274px;
   }
 }

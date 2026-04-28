@@ -138,7 +138,10 @@
             <fieldset class="filter__group">
               <legend class="filter__title">Цена</legend>
               <div class="range filter__range">
-                <div class="range__scale" data-range="price"></div>
+                <div class="range__scale" data-range="price">
+                  <span class="range__scale-handle range__scale-handle--min"></span>
+                  <span class="range__scale-handle range__scale-handle--max"></span>
+                </div>
                 <label class="range__field">
                   <span class="visually-hidden">Минимальная цена</span>
                   <input class="range__input" type="number" name="price-min" value="0">
@@ -225,8 +228,8 @@
                 <article class="product-card">
                   <a class="product-card__image-link" href="#">
                     <picture>
-                      <source srcset="images/products/can-decaf-flat-white@1x.webp 1x, images/products/can-decaf-flat-white@2x.webp 2x" type="image/webp" width="130" height="188">
-                      <img class="product-card__image" src="images/products/can-decaf-flat-white@1x.png" srcset="images/products/can-decaf-flat-white@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка.">
+                      <source srcset="images/products/can-balanced@1x.webp 1x, images/products/can-balanced@2x.webp 2x" type="image/webp" width="130" height="188">
+                      <img class="product-card__image" src="images/products/can-balanced@1x.png" srcset="images/products/can-balanced@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <h3 class="product-card__title">
@@ -243,8 +246,26 @@
                 <article class="product-card">
                   <a class="product-card__image-link" href="#">
                     <picture>
-                      <source srcset="images/products/can-lavender-latte@1x.webp 1x, images/products/can-lavender-latte@2x.webp 2x" type="image/webp" width="130" height="188">
-                      <img class="product-card__image" src="images/products/can-lavender-latte@1x.png" srcset="images/products/can-lavender-latte@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
+                      <source srcset="images/products/can-intense@1x.webp 1x, images/products/can-intense@2x.webp 2x" type="image/webp" width="130" height="188">
+                      <img class="product-card__image" src="images/products/can-intense@1x.png" srcset="images/products/can-intense@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
+                    </picture>
+                  </a>
+                  <h3 class="product-card__title">
+                    <a class="product-card__title-link" href="#">Декаф Флэт Уайт</a>
+                  </h3>
+                  <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                  <div class="product-card__footer">
+                    <span class="product-card__price">225₽</span>
+                    <button class="button product-card__button" type="button">В корзину</button>
+                  </div>
+                </article>
+              </li>
+              <li class="catalog__item">
+                <article class="product-card">
+                  <a class="product-card__image-link" href="#">
+                    <picture>
+                      <source srcset="images/products/can-strong@1x.webp 1x, images/products/can-strong@2x.webp 2x" type="image/webp" width="130" height="188">
+                      <img class="product-card__image" src="images/products/can-strong@1x.png" srcset="images/products/can-strong@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <h3 class="product-card__title">
@@ -279,8 +300,8 @@
                 <article class="product-card">
                   <a class="product-card__image-link" href="#">
                     <picture>
-                      <source srcset="images/products/can-vanilla@1x.webp 1x, images/products/can-vanilla@2x.webp 2x" type="image/webp" width="130" height="188">
-                      <img class="product-card__image" src="images/products/can-vanilla@1x.png" srcset="images/products/can-vanilla@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
+                      <source srcset="images/products/can-lavender-latte@1x.webp 1x, images/products/can-lavender-latte@2x.webp 2x" type="image/webp" width="130" height="188">
+                      <img class="product-card__image" src="images/products/can-lavender-latte@1x.png" srcset="images/products/can-lavender-latte@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <h3 class="product-card__title">
@@ -297,26 +318,8 @@
                 <article class="product-card">
                   <a class="product-card__image-link" href="#">
                     <picture>
-                      <source srcset="images/products/can-caramel@1x.webp 1x, images/products/can-caramel@2x.webp 2x" type="image/webp" width="130" height="188">
-                      <img class="product-card__image" src="images/products/can-caramel@1x.png" srcset="images/products/can-caramel@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
-                    </picture>
-                  </a>
-                  <h3 class="product-card__title">
-                    <a class="product-card__title-link" href="#">Декаф Флэт Уайт</a>
-                  </h3>
-                  <p class="product-card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-                  <div class="product-card__footer">
-                    <span class="product-card__price">225₽</span>
-                    <button class="button product-card__button" type="button">В корзину</button>
-                  </div>
-                </article>
-              </li>
-              <li class="catalog__item">
-                <article class="product-card">
-                  <a class="product-card__image-link" href="#">
-                    <picture>
-                      <source srcset="images/products/can-coconut@1x.webp 1x, images/products/can-coconut@2x.webp 2x" type="image/webp" width="130" height="188">
-                      <img class="product-card__image" src="images/products/can-coconut@1x.png" srcset="images/products/can-coconut@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
+                      <source srcset="images/products/can-decaf-flat-white@1x.webp 1x, images/products/can-decaf-flat-white@2x.webp 2x" type="image/webp" width="130" height="188">
+                      <img class="product-card__image" src="images/products/can-decaf-flat-white@1x.png" srcset="images/products/can-decaf-flat-white@2x.png 2x" width="130" height="188" alt="Банка кофейного напитка Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <h3 class="product-card__title">

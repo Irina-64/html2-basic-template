@@ -13,8 +13,11 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
   overflow: hidden;
+  border: 0;
   clip-path: inset(100%);
+  appearance: none;
 }
 
 .control__mark {
@@ -29,6 +32,11 @@
 
 .control__input:checked + .control__mark {
   border-color: $color-base-primary;
+}
+
+.control__input:focus-visible + .control__mark {
+  outline: 2px solid $color-primary-lighter;
+  outline-offset: 2px;
 }
 
 .control__input:checked + .control__mark::before {
@@ -67,6 +75,15 @@
 
 .control--checkbox .control__input:checked + .control__mark::before {
   left: 20px;
+}
+
+.control__input:disabled + .control__mark {
+  background-color: $color-base-light-grey;
+  border-color: $color-base-light-grey;
+}
+
+.control__input:disabled + .control__mark::before {
+  background-color: $color-base-grey;
 }
 
 .control__input:disabled ~ .control__label {
