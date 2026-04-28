@@ -29,3 +29,31 @@
   line-height: 16px;
   color: $color-base-grey;
 }
+
+@media (min-width: $tablet-width) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: $tablet-width;
+    padding: 40px 20px 30px;
+  }
+
+  .footer__logo {
+    margin-left: 0;
+  }
+
+  .footer__social {
+    margin: -2px 0 0;
+  }
+
+  .footer__nav {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+    border-top: 0;
+  }
+
+  .footer__academy-link {
+    grid-column: 1 / -1;
+    margin-top: 30px;
+  }
+}

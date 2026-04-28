@@ -16,3 +16,10 @@
   min-height: 420px;
   object-fit: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .map__image {
+    height: 480px;
+    min-height: 0;
+  }
+}

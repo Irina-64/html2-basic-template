@@ -33,3 +33,16 @@
   font-size: 12px;
   line-height: 16px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .footer-nav__column {
+    padding: 0;
+    border-bottom: 0;
+  }
+}
