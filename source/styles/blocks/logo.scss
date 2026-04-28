@@ -10,3 +10,16 @@
 .logo picture {
   display: block;
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    gap: 20px;
+  }
+
+  .logo__text {
+    display: block;
+    width: 126px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
