@@ -5,3 +5,10 @@
   line-height: 36px;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .section-title {
+    font-size: 42px;
+    line-height: 64px;
+  }
+}
