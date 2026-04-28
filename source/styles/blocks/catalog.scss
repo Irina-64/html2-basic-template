@@ -25,3 +25,32 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 80px 0 90px;
+  }
+
+  .catalog__container {
+    width: $tablet-width;
+    padding: 0 20px;
+  }
+
+  .catalog__title {
+    margin-bottom: 20px;
+  }
+
+  .catalog__filter {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .catalog__sort {
+    margin-bottom: 26px;
+  }
+
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
