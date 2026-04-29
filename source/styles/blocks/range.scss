@@ -76,6 +76,12 @@
   text-align: center;
   border: 2px solid $color-base-primary;
   border-radius: 4px;
+  appearance: textfield;
+}
+
+.range__input::-webkit-outer-spin-button,
+.range__input::-webkit-inner-spin-button {
+  appearance: none;
 }
 
 .range__field:first-of-type .range__input {
