@@ -114,6 +114,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list,
+  .main-nav--closed .main-nav__list {
+    gap: 20px;
+  }
+
   .main-nav__link {
     padding-right: 20px;
     padding-left: 20px;

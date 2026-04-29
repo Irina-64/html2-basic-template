@@ -32,12 +32,13 @@
   padding: 8px 0;
   font-size: 12px;
   line-height: 16px;
+  font-weight: 500;
 }
 
 .footer-nav__item--address .footer-nav__text,
 .footer-nav__item--phone .footer-nav__link {
   position: relative;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 
 .footer-nav__item--address .footer-nav__text::before,
