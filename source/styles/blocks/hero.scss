@@ -201,19 +201,18 @@
     position: relative;
     width: $desktop-width;
     min-height: 714px;
-    padding: 0;
+    padding: 30px 80px 84px 105px;
   }
 
   .hero__item--current {
-    position: relative;
-    display: block;
-    height: 714px;
+    display: grid;
+    grid-template-columns: 600px 625px;
+    gap: 30px;
+    align-items: start;
   }
 
   .hero__image-wrapper {
-    position: absolute;
-    top: 30px;
-    left: 105px;
+    order: 0;
     margin: 0;
   }
 
@@ -223,12 +222,10 @@
   }
 
   .hero__content {
-    position: absolute;
-    top: 180px;
-    left: 350px;
+    order: 0;
     width: 625px;
     margin: 0;
-    padding-top: 0;
+    padding-top: 150px;
     text-align: left;
   }
 
@@ -251,9 +248,11 @@
 
   .hero__pagination {
     position: absolute;
+    right: 0;
     bottom: 60px;
-    left: 234px;
+    left: 0;
     display: flex;
+    justify-content: center;
     gap: 8px;
     margin: 0;
     padding: 0;
