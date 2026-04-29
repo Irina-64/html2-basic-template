@@ -51,6 +51,7 @@
   .filter {
     grid-template-columns: 1fr;
     gap: 30px;
+    align-content: start;
   }
 
   .filter__buttons {
