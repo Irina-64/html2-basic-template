@@ -27,28 +27,27 @@
   left: 50%;
   width: 52px;
   height: 56px;
-  background-color: $color-base-primary;
   transform: translateX(-50%);
   content: "";
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .advantages__item--speed::before {
-  mask-image: url("../../icons/advantages/speed.svg");
+  background-image: url("../../icons/advantages/speed.svg");
 }
 
 .advantages__item--fit::before {
-  mask-image: url("../../icons/advantages/fit.svg");
+  background-image: url("../../icons/advantages/fit.svg");
 }
 
 .advantages__item--energy::before {
-  mask-image: url("../../icons/advantages/energy.svg");
+  background-image: url("../../icons/advantages/energy.svg");
 }
 
 .advantages__item--eco::before {
-  mask-image: url("../../icons/advantages/ecology.svg");
+  background-image: url("../../icons/advantages/ecology.svg");
 }
 
 .advantages__item-title,
