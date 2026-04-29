@@ -80,5 +80,6 @@
 @media (min-width: $desktop-width) {
   .footer-nav {
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 9px;
   }
 }
