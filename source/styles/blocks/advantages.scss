@@ -68,6 +68,10 @@
   line-height: 20px;
 }
 
+.advantages__desc-break {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .advantages {
     padding: 50px 0 100px;
@@ -152,5 +156,9 @@
   .advantages__description {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .advantages__desc-break {
+    display: inline;
   }
 }
