@@ -34,6 +34,34 @@
   line-height: 16px;
 }
 
+.footer-nav__item--address .footer-nav__text,
+.footer-nav__item--phone .footer-nav__link {
+  position: relative;
+  padding-left: 24px;
+}
+
+.footer-nav__item--address .footer-nav__text::before,
+.footer-nav__item--phone .footer-nav__link::before {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background-color: $color-base-primary;
+  content: "";
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.footer-nav__item--address .footer-nav__text::before {
+  mask-image: url("../../icons/navigation/map-pin.svg");
+}
+
+.footer-nav__item--phone .footer-nav__link::before {
+  mask-image: url("../../icons/navigation/phone.svg");
+}
+
 @media (min-width: $tablet-width) {
   .footer-nav {
     display: grid;
