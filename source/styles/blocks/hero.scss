@@ -20,11 +20,13 @@
 }
 
 .hero__item--current {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__image-wrapper {
-  margin-bottom: 10px;
+  order: 2;
+  margin-top: 10px;
 }
 
 .hero__image {
@@ -33,6 +35,7 @@
 }
 
 .hero__content {
+  order: 1;
   text-align: center;
 }
 
@@ -101,11 +104,15 @@
 
 .hero__control::before {
   position: absolute;
-  top: 318px;
+  top: 50%;
+  left: 50%;
   width: 11px;
   height: 20px;
-  border-top: 2px solid $color-base-primary;
-  border-left: 2px solid $color-base-primary;
+  transform: translate(-50%, -50%);
+  background-color: $color-base-primary;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 11px 20px;
   content: "";
 }
 
@@ -114,8 +121,7 @@
 }
 
 .hero__control--prev::before {
-  left: 7px;
-  transform: rotate(-45deg);
+  mask-image: url("../../icons/stack.svg#buttons_hero-control-prev");
 }
 
 .hero__control--next {
@@ -123,8 +129,7 @@
 }
 
 .hero__control--next::before {
-  right: 7px;
-  transform: rotate(135deg);
+  mask-image: url("../../icons/stack.svg#buttons_hero-control-next");
 }
 
 .hero__pagination {
@@ -179,18 +184,6 @@
     width: 80px;
     height: 640px;
   }
-
-  .hero__control::before {
-    top: 310px;
-  }
-
-  .hero__control--prev::before {
-    left: 34px;
-  }
-
-  .hero__control--next::before {
-    right: 34px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -243,10 +236,6 @@
   .hero__control {
     width: 80px;
     height: 714px;
-  }
-
-  .hero__control::before {
-    top: 347px;
   }
 
   .hero__pagination {
