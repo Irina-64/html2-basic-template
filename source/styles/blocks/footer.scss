@@ -20,14 +20,24 @@
   border-top: 1px solid $color-base-secondary;
 }
 
-.footer__academy-link {
-  display: inline-flex;
+.footer__academy {
+  display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 20px;
+  margin: 20px 0 0;
   font-size: 12px;
   line-height: 16px;
   color: $color-base-grey;
+}
+
+.footer__academy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: inherit;
+}
+
+.footer__academy-icon {
+  flex-shrink: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -52,7 +62,7 @@
     border-top: 0;
   }
 
-  .footer__academy-link {
+  .footer__academy {
     grid-column: 1 / -1;
     margin-top: 30px;
   }
@@ -92,7 +102,7 @@
     margin-top: 0;
   }
 
-  .footer__academy-link {
+  .footer__academy {
     margin-top: 20px;
   }
 }

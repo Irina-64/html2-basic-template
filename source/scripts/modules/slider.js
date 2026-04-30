@@ -1,11 +1,9 @@
 const slider = document.querySelector('.hero');
 
 const initSlider = () => {
-  if (!slider) {
-    return;
+  if (slider) {
+    // Логика переключения слайдов будет добавлена после завершения вёрстки блока.
   }
-
-  // Логика переключения слайдов будет добавлена после завершения вёрстки блока.
 };
 
 export { initSlider };

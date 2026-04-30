@@ -40,6 +40,12 @@
 .footer-nav__item--phone .footer-nav__link {
   position: relative;
   padding-left: 20px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-nav__item--address {
+  margin-bottom: 0;
 }
 
 .footer-nav__item--address .footer-nav__text::before,
